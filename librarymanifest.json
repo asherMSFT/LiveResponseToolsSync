@@ -8,5 +8,10 @@
       "fileName": "test.ps1",      
       "description": "",      
       "parametersDescription": ""
+    },
+    {
+      "fileName": "full-mem-dump.ps1",      
+      "description": "Script to perform full memory dump with upload to Azure Blob",      
+      "parametersDescription": ""
     }
 ]
