@@ -3,11 +3,11 @@ on: push
 
 jobs:
   pester-test:
-    name: Pester test
+    name: test step
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Perform a Pester test from the command-line
+      - name: Perform powershell
         shell: pwsh
-        run: ./Libsync.ps1 -ClientId '$CLIENT_ID' -ClientSecret '${{ secrets.CLIENT_SECRET }}' -TenantId '$TENANT_ID'
+        run: ./Libsync.ps1 -ClientId '${{ vars.CLIENT_ID }}' -ClientSecret '${{ secrets.CLIENT_SECRET }}' -TenantId '${{ vars.TENANT_ID }}'
