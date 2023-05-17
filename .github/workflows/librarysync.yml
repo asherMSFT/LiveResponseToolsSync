@@ -1,13 +1,13 @@
-name: Test PowerShell
+name: Live Response Tools Sync
 on: push
 
 jobs:
-  pester-test:
-    name: test step
+  sync-job:
+    name: main 
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Perform powershell
+      - name: Execute sync script
         shell: pwsh
         run: ./Libsync.ps1 -ClientId '${{ vars.CLIENT_ID }}' -ClientSecret '${{ secrets.CLIENT_SECRET }}' -TenantId '${{ vars.TENANT_ID }}'
