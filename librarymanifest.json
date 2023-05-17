@@ -1,0 +1,12 @@
+[
+    {
+      "fileName": "linux.sh",
+      "description": "Collect ",      
+      "parametersDescription": "-full"
+    },
+    {
+      "fileName": "test.ps1",      
+      "description": "",      
+      "parametersDescription": ""
+    }
+]
